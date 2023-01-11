@@ -1,0 +1,107 @@
+/* block */
+.#{$block-selector} {
+    margin-bottom: $block-module-margin-bottom;
+    position: relative;
+    background: transparent;
+    .#{$block-heading-selector}{
+        font-size: 18px;
+        margin: 0 0 22px;
+        font-weight: 500;
+        position: relative;
+    }
+}
+.wpb_video_widget .video-description{
+    padding: 10px;
+}
+// Sidebar
+.sidebar,
+.#{$app-prefix}-sidebar {
+    .widget{
+        margin: 0 0 40px;
+        overflow:hidden;
+        .#{$block-heading-selector}{
+            font-size: 18px;
+            margin: 0 0 15px;
+            font-weight: 500;
+            position: relative;
+        }
+    }
+    // widet porducts list
+    .apus-products-list{
+        border-style: solid;
+        border-color: $border-color;
+        border-width:0 1px 1px;
+        .product-block{
+            padding: 20px;
+            margin: 0;
+        }
+    }
+    // widget instagram
+    .row.instagram-pics{
+        margin-left: -6px;
+        margin-right: -6px;
+        > [class*="col-md"]{
+            padding-left: 6px;
+            padding-right: 6px;
+            margin-bottom: 12px;
+        }
+    }
+    // widget single images
+    .widget_apus_single_image{
+        margin-bottom: 30px;
+    }
+}
+// top bar
+#apus-topbar{
+    // widget info
+    .info-topbar{
+        .textwidget{
+            > span{
+                @include rtl-padding-right(10px);
+                @include rtl-margin-right(10px);
+                @include rtl-float-left();
+                @include rtl-border-right(1px solid $border-color);
+                &:last-child{
+                    border: 0;
+                }
+            }
+        }
+        .fa{
+            @include rtl-margin-right(8px);
+        }
+    }
+}
+// footer 
+.apus-footer{
+    .#{$block-heading-selector}{
+        color: $footer-heding-title-color;
+    }
+    &.dark {
+        .#{$block-heading-selector}{
+            color:#fff;
+        }
+        background:#000000;
+        color:#999999;
+        a{
+            color:#999999;
+            &:hover,&:focus{
+                color:#fff;
+            }
+        }
+    }
+}
+// copyright
+.apus-copyright{
+    .wpb_content_element,
+    .widget{
+        margin-bottom: 0 !important;
+    } 
+    .menu li{
+        display: inline-block;
+        @include rtl-margin-right(10px);
+        margin-bottom:0;
+        &:last-child{
+            margin:0;
+        }
+    } 
+}

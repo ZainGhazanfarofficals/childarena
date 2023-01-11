@@ -1,0 +1,27 @@
+2023-01-11T16:31:49+00:00 DEBUG POST: https://ads.tiktok.com/marketing_api/api/developer/app/create_auto_approve/
+
+{"business_platform":"PROD","smb_id":"tt4b_woocommerce_63bee4751e3e0httplocalhost8080childarenawp-admin","smb_name":"PROD","redirect_url":"http:\/\/localhost:8080\/childarena\/wp-admin\/"}
+ ajax: DOING_AJAX
+2023-01-11T16:31:50+00:00 DEBUG Tt4b_Mapi_Class::create_open_source_app: Response: 
+
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: application/json
+X-Tt-Logid: 202301111631486BB321D3579BB9A5780D,202301111631486BB321D3579BB9A5780D
+x-tt-trace-host: 017d72ec33b5dff4f4733d5e4924853d120642ccde6b96a277caf38393e66a993be4230c110f6edcbf46b9b1932d2e19802eb50c5cd278b50409bbf53a05eb0e4f88d56f055807d10611eed366858f1b897ddcf2c2772d2d04e6c5a2aee93b9bee5c7fe1e951a12437ebb3ffff512a6d72
+Content-Encoding: gzip
+Content-Length: 210
+X-Origin-Response-Time: 158,23.48.107.7
+X-Akamai-Request-ID: 9dbafc56.4c10ce
+Date: Wed, 11 Jan 2023 16:31:50 GMT
+X-Cache: TCP_MISS from a2-23-159-110.deploy.akamaitechnologies.com (AkamaiGHost/10.10.3-45298580) (-)
+Connection: close
+Vary: Accept-Encoding
+X-Cache-Remote: TCP_MISS from a23-48-107-7.deploy.akamaitechnologies.com (AkamaiGHost/10.10.3-45298580) (-)
+x-tt-trace-tag: id=16;cdn-cache=miss;type=dyn
+Server-Timing: cdn-cache; desc=MISS, edge; dur=142, origin; dur=158
+Server-Timing: inner; dur=153
+X-Parent-Response-Time: 297,2.23.159.110
+
+{"code":0,"msg":"ok","data":{"redirect_uri":"http:\/\/localhost:8080\/childarena\/wp-admin\/","external_data_key":"2d48e04a-b849-452a-b5ba-28e90a3cde63","app_id":"7187433250208350210","app_secret":"2a466f109ca570818c0551153077a761513728d3"}}
+

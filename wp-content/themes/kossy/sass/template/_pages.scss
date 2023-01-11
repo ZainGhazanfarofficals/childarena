@@ -1,0 +1,155 @@
+// home Page
+body.home .apus-header{
+	.vertical-wrapper{
+		.content-vertical{
+			display: block;
+		}
+		&.vertical-toggle-show{
+			.content-vertical{
+				display: none;
+			}
+		}
+	}
+}
+// layout for woocommerce
+@media(min-width:1501px){
+    .col-md-cl-5{
+        width: 20%;
+        &.first{
+        	clear: both;
+        }
+    }
+}
+@media(min-width: 1200px) and (max-width:1500px){
+	.col-md-cl-5{
+        width: 25%;
+        &.first:nth-child(4n + 1){
+        	clear: both;
+        }
+    }
+    div.product.col-md-cl-5:nth-child(4n + 1){
+    	clear: both;
+    }
+}
+.main-page {
+	.page-links{
+		clear: both;
+		overflow: hidden;
+		padding:$theme-padding 0;
+		margin:0;
+	}
+	#comments{
+		margin-top:20px;
+		@media(min-width:1200px){
+			margin-top:30px;
+			padding-top:20px;
+		}
+	}
+}
+.page-shop{
+	&.container-fluid{
+		@media(min-width:1200px){
+			padding-right:70px;
+			padding-left:70px;
+		}
+	}
+}
+//----------------------------------
+// layout page
+.wrapper-80{
+	padding-left:50px;
+	padding-right:50px;
+}
+@media(min-width:1200px){
+	.wrapper-80{
+		padding-left:80px;
+		padding-right:80px;
+	}
+	.wrapper-50{
+		padding-left:50px;
+		padding-right:50px;
+	}
+}
+.apus-footer-inner{
+	padding-left: $theme-padding / 2;
+	padding-right: $theme-padding / 2;
+}
+div.wpcf7-validation-errors{
+	margin: 0;
+	padding: 15px;
+}
+.contact-form-content{
+	padding: $theme-padding;
+	background: $contact-bg;
+	min-height: 260px;
+	.rounded{
+		@include rtl-margin-right(10px);
+		color: $white;
+		@include size(40px,40px);
+		background: darken($body-bg, 20%);
+		.fa,.icon{
+			@include font-size(font-size,16px);
+			margin: 13px;
+		}
+	}
+	small{
+		color: darken($text-color, 20%);
+	}
+}
+.user{
+	> div{
+		display: none;
+		&.active{
+			display: block;
+		}
+	}
+}
+// blog
+@media(min-width:1200px){
+	.sidebar-blog-right{
+		.sidebar {
+			@include rtl-padding-left(40px);
+		}
+	}
+	.sidebar-blog-left{
+		> .sidebar {
+			@include rtl-padding-right(40px);
+		}
+	}
+}
+// Page Not Found
+//----------------------------------
+.page-404{
+   .not-found{
+   	padding: 30px 0;
+   	@media(min-width:1200px){
+   		padding: 100px 0;
+   	}
+   }
+   .icon-error{
+   		font-size:60px;
+   }
+   .return-home{
+   		font-size:16px;
+   		text-decoration: underline;
+   }
+   .description{
+   	font-size:16px;
+   	margin-bottom:$theme-padding;
+   }
+   .title-big{
+   	font-size:20px;
+   	@media(min-width:992px){
+   		font-size:36px;
+   	}
+   	font-weight:400;
+   	margin:30px 0 5px;
+   }
+   .widget-search{
+   	max-width:500px;
+   	margin:auto;
+   }
+}
+.radius-50{
+	@include border-radius(50px);
+}
